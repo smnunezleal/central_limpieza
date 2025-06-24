@@ -37,9 +37,19 @@ nav ul li a {
 
 .hero {
     text-align: center;
-    background: url('../images/hero.jpg') no-repeat center center/cover;
+    background: linear-gradient(to right, #3498db, #2ecc71);
     color: white;
     padding: 80px 20px;
+}
+
+.nosotros {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.nosotros ul {
+    list-style: disc inside;
+    margin-top: 10px;
 }
 
 .productos {
@@ -65,6 +75,10 @@ nav ul li a {
 .contacto {
     padding: 40px 20px;
     background-color: #eaeaea;
+}
+
+.contacto p {
+    margin: 5px 0;
 }
 
 form {
