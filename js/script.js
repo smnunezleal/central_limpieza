@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartContainer = document.getElementById('cart');
     const cartItemsContainer = document.getElementById('cart-items');
     const products = document.querySelectorAll('.producto');
+    const searchInput = document.getElementById('search');
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     function updateCartCount() {
@@ -23,17 +24,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    products.forEach(prod => {
-        const name = prod.querySelector('h3').textContent;
-        const btn = document.createElement('button');
-        btn.textContent = 'Agregar al carrito';
+    const addButtons = document.querySelectorAll('.add-cart-btn');
+    addButtons.forEach(btn => {
+        const name = btn.closest('.producto').querySelector('h3').textContent;
         btn.addEventListener('click', () => {
             cart.push(name);
             localStorage.setItem('cart', JSON.stringify(cart));
             updateCartCount();
         });
-        prod.appendChild(btn);
     });
+
+    if (searchInput) {
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.toLowerCase();
+            products.forEach(prod => {
+                const name = prod.querySelector('h3').textContent.toLowerCase();
+                prod.style.display = name.includes(query) ? '' : 'none';
+            });
+        });
+    }
 
     cartButton.addEventListener('click', () => {
         cartContainer.classList.toggle('hidden');
