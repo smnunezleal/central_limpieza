@@ -7,43 +7,155 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="top-banner">Envíos CABA y GBA Norte ⚡ | Consultá nuestras promociones 🔥</div>
     <header>
         <div class="logo">LOGO</div>
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#promos">Promos</a></li>
+                <li><a href="#envios">Envíos</a></li>
+                <li><a href="#registrate">Registrate como Empresa</a></li>
+                <li><a href="#como-comprar">Cómo Comprar</a></li>
+                <li><a href="#devolucion">Política de Devolución</a></li>
             </ul>
         </nav>
-        <button id="view-cart" class="cart-button">Carrito (<span id="cart-count">0</span>)</button>
+        <input type="search" id="search" class="search-bar" placeholder="Buscar">
+        <div class="user-links">
+            <a href="#crear-cuenta">Crear Cuenta</a>
+            <a href="#login">Iniciar Sesión</a>
+        </div>
+        <button id="view-cart" class="cart-button">Carrito (<span id="cart-count">0</span> - $<span id="cart-total">0</span>)</button>
     </header>
 
     <section class="hero">
-        <h1>Bienvenidos a Nuestra Tienda de Limpieza</h1>
-        <p>Los mejores insumos para la higiene de tu hogar y empresa.</p>
-        <button>Ver productos</button>
+        <h1>SOMOS FÁBRICA QUÍMICA</h1>
+        <p>Productos de calidad asegurada y amplia performance.</p>
     </section>
 
     <section id="productos" class="productos">
         <h2>Productos Destacados</h2>
+        <div class="offers">
+            <span class="offer">8% OFF<br>COMPRANDO 5 O MÁS</span>
+            <span class="offer">8% OFF<br>COMPRANDO 5 O MÁS</span>
+        </div>
         <div class="grid">
             <div class="producto">
-                <img src="images/producto1.jpg" alt="Producto 1">
-                <h3>Producto 1</h3>
-                <p>Descripción corta del producto 1.</p>
+                <img src="https://via.placeholder.com/300x200" alt="Pack de 8 Rollo Cocina 200 Paños">
+                <h3>Pack de 8 Rollo Cocina 200 Paños</h3>
+                <p>$12.500</p>
+                <div class="product-buttons">
+                    <button class="details-btn">Detalles</button>
+                    <button class="add-cart-btn">Comprar</button>
+                </div>
             </div>
             <div class="producto">
-                <img src="images/producto2.jpg" alt="Producto 2">
-                <h3>Producto 2</h3>
-                <p>Descripción corta del producto 2.</p>
+                <img src="https://via.placeholder.com/300x200" alt="Limpiador líquido desinfectante Premium para pisos 5 litros">
+                <h3>Limpiador líquido desinfectante Premium para pisos 5 litros</h3>
+                <p>$11.500</p>
+                <div class="product-buttons">
+                    <button class="details-btn">Detalles</button>
+                    <button class="add-cart-btn">Comprar</button>
+                </div>
             </div>
             <div class="producto">
-                <img src="images/producto3.jpg" alt="Producto 3">
-                <h3>Producto 3</h3>
-                <p>Descripción corta del producto 3.</p>
+                <img src="https://via.placeholder.com/300x200" alt="Test Kit PH Pileta Tradicional">
+                <h3>Test Kit PH Pileta Tradicional</h3>
+                <p>$12.950</p>
+                <div class="product-buttons">
+                    <button class="details-btn">Detalles</button>
+                    <button class="add-cart-btn">Comprar</button>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="https://via.placeholder.com/300x200" alt="Limpiafondo Medialuna Con Cepillo">
+                <h3>Limpiafondo Medialuna Con Cepillo</h3>
+                <p>$16.500</p>
+                <div class="product-buttons">
+                    <button class="details-btn">Detalles</button>
+                    <button class="add-cart-btn">Comprar</button>
+                </div>
             </div>
         </div>
+        <div class="ver-todos"><a href="#">Ver todos los productos</a></div>
+    </section>
+
+    <section id="promos" class="promos">
+        <h2>Promos</h2>
+        <div class="grid">
+            <div class="producto">
+                <span class="badge">9% OFF</span>
+                <img src="https://via.placeholder.com/300x200" alt="Combo Limpieza Profesional">
+                <h3>Combo Limpieza Profesional</h3>
+                <p>$10.980</p>
+                <div class="product-buttons">
+                    <button class="details-btn">Detalles</button>
+                    <button class="add-cart-btn">Comprar</button>
+                </div>
+            </div>
+            <div class="producto">
+                <span class="badge">13% OFF</span>
+                <img src="https://via.placeholder.com/300x200" alt="Combo Mopa Centrifuga + Detergente por 5 litros más">
+                <h3>Combo Mopa Centrifuga + Detergente por 5 litros más…</h3>
+                <p>$9.999</p>
+                <div class="product-buttons">
+                    <button class="details-btn">Detalles</button>
+                    <button class="add-cart-btn">Comprar</button>
+                </div>
+            </div>
+            <div class="producto">
+                <span class="badge">8% OFF</span>
+                <img src="https://via.placeholder.com/300x200" alt="Detergente + Lavandina + …">
+                <h3>Detergente + Lavandina + …</h3>
+                <p>$34.999</p>
+                <div class="product-buttons">
+                    <button class="details-btn">Detalles</button>
+                    <button class="add-cart-btn">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="info">
+        <div class="info-item">Envíos a todo el país</div>
+        <div class="info-item">Venta Mayorista</div>
+        <div class="info-item">Cambios y devoluciones</div>
+        <div class="info-item">Novedades</div>
+    </section>
+
+    <section id="sobre-nosotros" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos minoristas y distribuidores de productos de limpieza profesional, con presencia en toda la Argentina.</p>
+    </section>
+
+    <section id="envios" class="envios">
+        <h2>Envíos</h2>
+        <p>Envíos CABA y GBA Norte con cobertura en todo el país. Retiro únicamente con coordinación previa.</p>
+    </section>
+
+    <section id="registrate" class="registrate">
+        <h2>Registrate como Empresa</h2>
+        <p>Accedé a promociones exclusivas para mayoristas registrando tu empresa.</p>
+        <form>
+            <input type="text" placeholder="Razón Social" required>
+            <input type="email" placeholder="Correo" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="como-comprar" class="como-comprar">
+        <h2>Cómo Comprar</h2>
+        <ol>
+            <li>Elegí los productos y agregalos al carrito.</li>
+            <li>Completá tus datos de envío y pago.</li>
+            <li>Confirmá la compra y recibí tu pedido.</li>
+        </ol>
+    </section>
+
+    <section id="devolucion" class="devolucion">
+        <h2>Política de Devolución</h2>
+        <p>Podés solicitar cambios o devoluciones dentro de los 10 días de recibido el producto.</p>
     </section>
 
     <div id="cart" class="cart hidden">
@@ -53,6 +165,10 @@
 
     <section id="contacto" class="contacto">
         <h2>Contacto</h2>
+        <p>Dr Mariano Moreno 5240, Vicente López - Buenos Aires (Cerca Unicenter Shopping)</p>
+        <p>Email: <a href="mailto:info@centrallimpieza.com.ar">info@centrallimpieza.com.ar</a></p>
+        <p>Whatsapp: <a href="tel:+541151177219">54 11-5117-7219</a> / <a href="tel:+541173629239">54 11-7362-9239</a></p>
+        <p>Horario de atención: Lunes a Viernes de 07:30 a 17:30hs</p>
         <form>
             <input type="text" placeholder="Nombre" required>
             <input type="email" placeholder="Correo" required>
@@ -62,7 +178,43 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Tu Empresa de Limpieza</p>
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4>Sobre Nosotros</h4>
+                <p>Somos minoristas y distribuidores de artículos de limpieza profesional.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#promos">Promos</a></li>
+                    <li><a href="#envios">Envíos</a></li>
+                    <li><a href="#registrate">Registrate como Empresa</a></li>
+                    <li><a href="#como-comprar">Cómo Comprar</a></li>
+                    <li><a href="#devolucion">Política de Devolución</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Medios de Envío</h4>
+                <p>Retiro únicamente con coordinación previa.</p>
+                <p>Envíos con cobertura en todo el país.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Medios de Pago</h4>
+                <p>Tarjetas de crédito y débito.</p>
+                <p>Transferencias bancarias.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>Dr Mariano Moreno 5240, Vicente López - Buenos Aires</p>
+                <p>Email: <a href="mailto:info@centrallimpieza.com.ar">info@centrallimpieza.com.ar</a></p>
+                <p>Whatsapp: <a href="tel:+541151177219">54 11-5117-7219</a> / <a href="tel:+541173629239">54 11-7362-9239</a></p>
+            </div>
+        </div>
+        <p>&copy; 2025 Central Limpieza - Todos los derechos reservados.</p>
+        <p>Defensa de las y los consumidores. Para reclamos ingresá acá. / Botón de arrepentimiento</p>
+        <p>Hecho con por Digital Jump Agency</p>
     </footer>
 
     <script src="js/script.js"></script>
